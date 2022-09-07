@@ -1,0 +1,54 @@
+<html><head>
+<title>Animations & transition</title><style>
+.a{ float:left; height:30px;
+    width:50px;
+    transform:rotate(20deg);
+    background-color: yellow;}
+.b{ float:left; height:30px;
+    width:50px; margin:30px;
+    transform:skew(30deg);
+    background-color: yellow;}
+.c{ float:left; margin:20px;
+    height:35px;  width:50px;
+    transform:scale(0.75);
+    background-color: yellow;}
+.d{ float:left; height:35px;
+    width:65px;
+    transform:translate(20px);
+    background-color: yellow;}
+.e{ height:30px; width:80px;
+    text-align:center;
+    background-color:yellow;
+    transform: translateX(20px) rotateX(45deg) scaleY(1.5) skewX(45deg);}
+@keyframes drive{
+from{transform:translateX(-20px);}
+to {transform: translateX(300px) translateY(80px) rotate(360deg);}}
+.f{ animation-name:drive;
+    animation-duration:3s;
+    background-color: white;
+    width:40px;}
+div{height:20px;   width:45px;
+    background-color: yellow;
+    transition:height width ;
+    transition-duration:2s;}
+div:hover{
+    height:70px; width:350px;
+    border-radius:50%;
+    background-color:green;}
+h2{ background-color:white;}
+</style></head>
+<body bgcolor="cyan">
+<h2><center><strong>Animations in CSS</strong></center></h2>
+<h3><center>transform</center></h3>
+<h4 class="a">rotate</h4>
+<h4 class="b">skew</h4>
+<h4 class="c">scale</h4>
+<h4 class="d">translate</h4>
+<br><br><br><br>
+<h4 class="e">combined</h4>
+<h3><center>keyframes</h3>
+<h4 class="f">Hello</h4>
+<br><br><br>
+<h4 class="g"><center>transition</center></h4>
+<div><center>hover!</center></div>
+</body></html>
